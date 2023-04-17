@@ -27,11 +27,14 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "dayjs": "^1.11.7",
+    "firebase": "^9.19.1",
     "next": "^13.3.0",
     "next-seo": "^5.15.0",
     "next-sitemap": "^4.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "twemoji": "^14.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",

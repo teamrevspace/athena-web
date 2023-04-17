@@ -1,5 +1,9 @@
 @tailwind base;
 
+html {
+  font-family: "Inter", sans-serif;
+}
+
 a {
   @apply text-blue-700;
 }
@@ -18,4 +22,11 @@ a:hover {
 
 .content ul {
   @apply my-6;
+}
+
+.emoji {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.125em;
 }
