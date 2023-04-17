@@ -54,7 +54,7 @@ const Index = () => {
       processImages(imageResultList.items);
     } else if (resultList && resultList.nextPageToken) {
       const moreResultList = await list(snapshotRef, {
-        maxResults: 8,
+        maxResults: 16,
         pageToken: resultList.nextPageToken,
       });
       setResultList(moreResultList);
@@ -87,7 +87,7 @@ const Index = () => {
         title="Athena"
         description="Athena is a general-purpose AI assistant with vision, voice, and memory capabilities."
       />
-      <div className="flex flex-col items-center p-16">
+      <div className="flex flex-col items-center px-8 py-16 sm:p-16">
         <div>
           <h1 className="text-4xl font-bold">{'Athena'}</h1>
         </div>
@@ -100,7 +100,7 @@ const Index = () => {
               </>
             }
           </h2>
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4">
             {imageList ? (
               imageList.map((image, index) => (
                 <div key={index} className="">
@@ -122,7 +122,7 @@ const Index = () => {
             </div>
           )}
         </div>
-        <div className="flex w-full flex-col">
+        <div className="mt-8 flex w-full flex-col">
           <h2 className="my-4 text-2xl font-semibold">
             {
               <>
